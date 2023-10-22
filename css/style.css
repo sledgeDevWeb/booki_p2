@@ -79,8 +79,8 @@
     /*SECTION BLOCK*/
     
     section {
-        width: 100%;
-        max-width: 1440px;
+        /* width: 100%;
+        max-width: 1440px; */
         padding: 10px;
         margin-bottom: 20px;
     }
@@ -431,12 +431,22 @@
         gap: 1rem;
     }
     
+    .links_footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
     .footer-links li a {
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
         letter-spacing: 0em;
         text-align: left;
+    }
+    
+    .links_footer {
+        list-style: none;
     }
     
     .footer-links li {
@@ -487,16 +497,16 @@
     
     @media (max-width: 767.98px) {
         .main-container {
-            width: 100%;
-            max-width: 500px;
+            width: 375px;
             height: 1882px;
         }
+        /* header mobile */
         header {
             display: flex;
             justify-content: center;
             flex-direction: column;
             border-bottom: 2px solid #D9D9D9;
-            width: 100%;
+            padding-top: 0;
         }
         .logo {
             display: flex;
@@ -514,7 +524,7 @@
         }
         nav {
             width: 100%;
-            max-width: 375px;
+            /* max-width: 375px; */
             height: 50px;
             text-align: center;
             padding: 10px;
@@ -531,20 +541,22 @@
             width: 140px;
             height: 10px;
         }
+        /* header mobile  end */
+        /* block text section */
         .text_box {
             width: 100%;
-            max-width: 375px;
+            /* max-width: 375px; */
             height: 80px;
-            padding-bottom: 20px;
+            padding-bottom: 25px;
         }
         .myform {
-            width: 100%;
-            max-width: 375px;
+            /* width: 100%;
+            max-width: 375px; */
             height: 50px;
         }
         .myform input {
             width: 100%;
-            max-width: 220px;
+            /* max-width: 220px; */
             border-right: 0px;
         }
         .myform .search_mobile {
@@ -573,21 +585,20 @@
         }
         .iconsFiltres {
             width: 100%;
-            max-width: 375px;
-            height: 210px;
+            height: 250px;
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem;
+            flex-direction: column;
         }
         .filtre_header h3 {
-            width: 50px;
-            height: 21px;
             font-size: 18px;
             font-weight: 700;
             line-height: 21px;
             letter-spacing: 0em;
-            text-align: center;
+            display: flex;
+            justify-content: left;
+            width: 350px;
+            height: 40px;
+            align-items: center;
         }
         .iconsText {
             width: 100%;
@@ -607,7 +618,7 @@
             width: 100%;
             max-width: 147px;
             height: 40px;
-            padding: 4px, 19px, 4px, 19px;
+            /* padding: 4px, 19px, 4px, 19px; */
             border-radius: 25px;
         }
         .iconsText i {
@@ -616,26 +627,28 @@
             padding: 2.87px, 0px, 2.87px, 0px;
         }
         .infobox {
-            padding-top: 20px;
             width: 100%;
             height: 38px;
             font-size: 16px;
             font-weight: 400;
             line-height: 19px;
             letter-spacing: 0em;
-            text-align: left;
         }
         .infobox .fa-solid {
-            width: 30px;
+            width: 25px;
             height: 25px;
             border: 1px solid #D9D9D9;
-            border-radius: 100%;
+            border-radius: 50%;
             font-size: 10px;
         }
+        /* section block end */
         .hebergements-and-populaires {
             flex-direction: column-reverse;
             width: 100%;
-            max-width: 375px;
+        }
+        .hebergements-and-populaires section {
+            background-color: var(--main-bg-color);
+            border-radius: 20px;
         }
         .hebergements-cards {
             width: 100%;
@@ -643,6 +656,22 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+        }
+        aside img {
+            width: 100%;
+            height: 124px;
+            object-fit: cover;
+            border: 5px solid #FFFFFF;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        aside .card-text {
+            width: 100%;
+            height: 104px;
+            border: 5px solid #FFFFFF;
+            box-shadow: 0px 3px 15px 0px #0000001A;
+            background-color: #FFFFFF;
+            border-radius: 0px 0px 20px 20px;
         }
         .populaires-cards {
             display: flex;
@@ -666,18 +695,22 @@
             color: #000000;
         }
         .card {
-            width: 305px;
+            width: 324px;
             height: 146px;
             padding: 0px;
             border-radius: 20px;
         }
         .card img {
-            width: 111px;
+            width: 130px;
             height: 146px;
             border-radius: 20px, 0px, 0px, 20px;
             border: 5px, 0px, 5px, 5px;
         }
         .activite {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             width: 100%;
             /* max-width: 375px; */
             height: 900px;
@@ -721,19 +754,25 @@
             background-color: #F2F2F2;
             width: 100%;
             /* max-width: 375px; */
-            height: 471px;
+            height: 475px;
             display: flex;
+            justify-content: center;
             flex-direction: column;
         }
-        .footer-links {
+        .links_footer {
+            display: flex;
+            justify-content: space-between;
             flex-direction: column;
             gap: 0.5rem;
         }
-        .footer-links li a {
+        .links_footer li a {
             font-size: 14px;
             font-weight: 400;
             line-height: 18px;
             letter-spacing: 0em;
             text-align: left;
+        }
+        .links_footer {
+            list-style: none;
         }
     }
