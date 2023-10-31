@@ -819,12 +819,18 @@ h3.hebergements-card-title {
         gap: 1rem;
     }
     article {
-        width: 238px;
+        width: 288px;
     }
     .populaires-cards .card-title {
         font-size: 12px;
     }
     .populaires-cards .card-subtitle {
         font-size: 10px;
+    }
+    .hebergement_activite {
+        width: 340px;
+    }
+    .activite-img-text img {
+        width: 340px;
     }
 }
