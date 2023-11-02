@@ -749,52 +749,38 @@ h3.hebergements-card-title {
         justify-content: space-between;
         flex-direction: column;
     }
-    .activite {
-        width: 100%;
-        background-color: #FFFFFF;
+    /* .activite {
         display: flex;
         flex-direction: column;
     }
-    .activite-card-title {
+    .activite-card-text {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
     }
     .hebergement_activite {
-        width: 375px;
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        flex-direction: column;
     }
     .activite-img-text {
-        width: 100%;
-        height: 240px;
-        border-radius: 20px;
-        margin-top: 15px;
-        box-shadow: 0px 3px 15px 0px #0000001A;
-    }
-    .activite-img-text img {
-        width: 375px;
-        height: 190px;
-        border-radius: 20px 20px 0px 0px;
-    }
-    .activite-img-text p {
-        width: 375px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-        padding-left: 20px;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
     .main-footer {
         background-color: var(--filter-bg-color);
         width: 100%;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
+    }
+    .footer-links li a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
     }
 }
 
@@ -812,25 +798,18 @@ h3.hebergements-card-title {
     .section-title {
         font-size: 18px;
     }
-    .populaires-cards {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 1rem;
-    }
     article {
-        width: 288px;
+        width: 270px;
     }
-    .populaires-cards .card-title {
-        font-size: 12px;
-    }
-    .populaires-cards .card-subtitle {
-        font-size: 10px;
+    .card {
+        background-color: white;
+        border-radius: 20px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
     .hebergement_activite {
-        width: 340px;
+        width: 320px;
     }
     .activite-img-text img {
-        width: 340px;
+        width: 320px;
     }
 }
