@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
 }
 
  :root {
@@ -15,10 +14,12 @@
     color: var(--main-color);
 }
 
-
-/* body {
-    border: 2px solid red;
-} */
+body {
+    /* background-color: #0065FC; */
+    overflow-x: hidden;
+    /* scroll-padding-top: 9rem; */
+    scroll-behavior: smooth;
+}
 
 .main-container {
     width: 90%;
@@ -52,7 +53,7 @@ header hr {
 
 .links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 4rem;
 }
 
@@ -612,14 +613,10 @@ h3.hebergements-card-title {
 
 @media (max-width: 767.98px) {
     /* header mobile */
-    .main-container {
-        width: 100%;
-    }
     header {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: column;
-        /* border-bottom: 2px solid #D9D9D9; */
         width: 100%;
     }
     .logo {
@@ -627,7 +624,6 @@ h3.hebergements-card-title {
         align-items: center;
         justify-content: center;
         text-align: center;
-        width: 100%;
     }
     .logo img {
         width: 61px;
@@ -635,12 +631,16 @@ h3.hebergements-card-title {
         padding-left: 20px;
         padding-top: 10px;
     }
-    nav {
-        width: 100%;
-        /* max-width: 375px; */
-        height: 50px;
-        text-align: center;
+    .links {
+        width: 375px;
+        display: flex;
+        justify-content: space-between;
+        /* gap: 15rem; */
         padding: 10px;
+    }
+    .myline {
+        border-top: 2px solid orange;
+        padding: 0px;
     }
     /* header mobile  end */
     /* block text section */
@@ -649,17 +649,7 @@ h3.hebergements-card-title {
         padding-bottom: 25px;
         background-color: go;
     }
-    header nav li a {
-        /* border-bottom: 2px solid green; */
-    }
-    header nav ul {
-        width: 100%;
-        border-bottom: 2px solid green;
-    }
-    header nav ul {
-        gap: 0;
-    }
-    .text_box h1 {
+    k .text_box h1 {
         width: 100%;
         font-family: Raleway;
         font-size: 18px;
@@ -798,6 +788,25 @@ h3.hebergements-card-title {
 /* mobile */
 
 @media screen and (max-width:480px) {
+    body {
+        background-color: #0065FC;
+    }
+    .main-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .links {
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        gap: 8rem;
+    }
+    .myline {
+        /* width: 480px; */
+        border-top: 2px solid orange;
+        padding: 0px;
+    }
     .infobox {
         width: 100%;
         font-size: 14px;
