@@ -38,10 +38,6 @@ header {
     align-items: center;
 }
 
-header hr {
-    display: none;
-}
-
 .logo img {
     width: 61.09px;
     height: 19px;
@@ -632,15 +628,21 @@ h3.hebergements-card-title {
         padding-top: 10px;
     }
     .links {
+        position: relative;
         width: 375px;
         display: flex;
-        justify-content: space-between;
-        /* gap: 15rem; */
-        padding: 10px;
+        justify-content: center;
+        gap: 14rem;
     }
     .myline {
-        border-top: 2px solid orange;
-        padding: 0px;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        border: 1px solid #F2F2F2;
+    }
+    nav a:hover {
+        border-bottom: 2px solid var(--main-color);
     }
     /* header mobile  end */
     /* block text section */
@@ -788,24 +790,24 @@ h3.hebergements-card-title {
 /* mobile */
 
 @media screen and (max-width:480px) {
-    body {
-        background-color: #0065FC;
-    }
     .main-container {
         width: 100%;
         margin: 0;
         padding: 0;
     }
     .links {
+        position: relative;
         width: 375px;
         display: flex;
         justify-content: center;
         gap: 8rem;
     }
     .myline {
-        /* width: 480px; */
-        border-top: 2px solid orange;
-        padding: 0px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        border: 1px solid #F2F2F2;
     }
     .infobox {
         width: 100%;
