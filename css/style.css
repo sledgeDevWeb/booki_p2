@@ -15,10 +15,10 @@
 }
 
 body {
-    /* background-color: #0065FC; */
     overflow-x: hidden;
-    /* scroll-padding-top: 9rem; */
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 
 .main-container {
@@ -66,6 +66,10 @@ nav a {
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
+}
+
+.myline {
+    display: none;
 }
 
 
@@ -216,7 +220,7 @@ section {
     justify-content: space-between;
     border-radius: 15px;
     width: 100%;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     gap: 2rem;
 }
 
@@ -226,9 +230,9 @@ section {
     /* max-width: 260px; */
 }
 
-aside img {
+aside .card-text img {
     width: 100%;
-    max-width: 340px;
+    max-width: 375px;
     height: 124px;
     object-fit: cover;
     border: 5px solid #FFFFFF;
@@ -238,12 +242,12 @@ aside img {
 
 aside .card-text {
     width: 100%;
-    max-width: 340px;
-    height: 104px;
+    max-width: 375px;
+    height: 240px;
     border: 5px solid #FFFFFF;
     box-shadow: 0px 3px 15px 0px #0000001A;
     background-color: #FFFFFF;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 h3.hebergements-card-title {
@@ -292,10 +296,6 @@ h3.hebergements-card-title {
 
 .card-title {
     font-size: 16px;
-}
-
-.euro {
-    font-weight: 700;
 }
 
 .neutral-star {
@@ -758,9 +758,35 @@ h3.hebergements-card-title {
         justify-content: space-between;
         flex-direction: column;
     }
+    section .hebergements {
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+        box-sizing: border-box;
+    }
+    aside .card-text img {
+        width: 100%;
+        max-width: 254px;
+        height: 124px;
+        object-fit: cover;
+        border: 5px solid #FFFFFF;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    aside .card-text {
+        width: 100%;
+        max-width: 264px;
+        height: 240px;
+        border: 5px solid #FFFFFF;
+        box-shadow: 0px 3px 15px 0px #0000001A;
+        background-color: #FFFFFF;
+        border-radius: 20px 20px 20px 20px;
+    }
     .activite {
         width: 100%;
-        height: 165vh;
+        height: 168vh;
         display: flex;
         flex-direction: column;
         align-items: center;
