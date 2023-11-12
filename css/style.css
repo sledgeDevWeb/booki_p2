@@ -609,10 +609,17 @@ h3.hebergements-card-title {
 
 @media (max-width: 767.98px) {
     /* header mobile */
+    .main-container {
+        width: 100%;
+        margin: 0;
+        /* padding: 10px 10px 0px; */
+        padding: 0px;
+    }
     header {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        align-items: center;
         width: 100%;
     }
     .logo {
@@ -631,10 +638,11 @@ h3.hebergements-card-title {
         position: relative;
         width: 375px;
         display: flex;
-        justify-content: center;
+        align-items: center;
         gap: 14rem;
     }
     .myline {
+        display: block;
         position: absolute;
         top: 72px;
         left: 0;
@@ -647,14 +655,16 @@ h3.hebergements-card-title {
     /* header mobile  end */
     /* block text section */
     .text_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        padding-bottom: 25px;
-        background-color: go;
+        padding: 3%;
     }
-    k .text_box h1 {
+    .text_box h1 {
         width: 100%;
         font-family: Raleway;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 700;
         line-height: 26px;
         letter-spacing: 0em;
@@ -670,6 +680,7 @@ h3.hebergements-card-title {
     }
     .myform {
         width: 100%;
+        padding: 3%;
         max-width: 375px;
         height: 50px;
     }
@@ -701,10 +712,11 @@ h3.hebergements-card-title {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 20px;
+        padding: 3%;
+        background-color: red;
     }
     .iconsText {
-        width: 100;
+        width: 100%;
         max-width: 375px;
         display: flex;
         justify-content: space-between;
@@ -816,24 +828,39 @@ h3.hebergements-card-title {
 /* mobile */
 
 @media screen and (max-width:480px) {
-    .main-container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
     .links {
+        display: flex;
+        align-items: center;
         position: relative;
         width: 375px;
-        display: flex;
         justify-content: center;
         gap: 8rem;
+        margin: 0;
+        padding: 15px 0 10px;
     }
-    .myline {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        border: 1px solid #F2F2F2;
+    .links li a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0% 3% 0%;
+    }
+    .myform {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 3%;
+        min-width: 190px;
+        max-width: 316px;
+        height: 50px;
+        background-color: orange;
+    }
+    .myform input {
+        width: 100%;
+        min-width: 180px;
+        max-width: 316px;
+        padding-right: 5px;
+        border-right: 0px;
     }
     .infobox {
         width: 100%;
@@ -841,6 +868,17 @@ h3.hebergements-card-title {
         font-weight: 400;
         line-height: 19px;
         letter-spacing: 0em;
+    }
+    .text_box h1 {
+        width: 100%;
+        min-width: 240px;
+        max-width: 475px;
+        font-family: Raleway;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
     }
     .section-title {
         font-size: 18px;
@@ -859,5 +897,13 @@ h3.hebergements-card-title {
     .activite-img-text img {
         width: 320px;
         object-fit: cover;
+    }
+    .myline {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        border: 1px solid #F2F2F2;
     }
 }
