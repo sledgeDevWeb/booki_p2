@@ -19,7 +19,6 @@ body {
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
-    border: 2px solid black;
 }
 
 .main-container {
@@ -1001,7 +1000,7 @@ h3.hebergements-card-title {
     }
     .activite {
         width: 100%;
-        height: 170vh;
+        height: 160vh;
         display: flex;
         flex-direction: column;
         align-items: center;
