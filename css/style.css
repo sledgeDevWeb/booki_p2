@@ -773,8 +773,8 @@ h3.hebergements-card-title {
     /* header mobile */
     .main-container {
         width: 100%;
+        max-width: 375px;
         margin: 0;
-        /* padding: 10px 10px 0px; */
         padding: 0px;
     }
     header {
@@ -813,6 +813,12 @@ h3.hebergements-card-title {
         align-items: center;
         width: 100%;
     }
+    nav a:hover {
+        width: 183px;
+        color: var(--main-color);
+        border-top: none;
+        border-bottom: 2px solid var(--main-color);
+    }
     .myline {
         width: 100%;
         display: block;
@@ -827,7 +833,7 @@ h3.hebergements-card-title {
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 335px;
+        max-width: 280px;
         /* padding: 3%; */
         min-width: 190px;
         max-width: 335px;
@@ -836,7 +842,7 @@ h3.hebergements-card-title {
     .myform input {
         width: 100%;
         min-width: 180px;
-        max-width: 335px;
+        max-width: 300px;
         border-right: 0px;
     }
     .infobox {
@@ -968,13 +974,6 @@ h3.hebergements-card-title {
         border-radius: 20px;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
-    .hebergement_activite {
-        width: 320px;
-    }
-    .activite-img-text img {
-        width: 320px;
-        object-fit: cover;
-    }
     .hebergements-and-populaires section {
         border-radius: 0px;
         margin: 0;
@@ -1000,6 +999,7 @@ h3.hebergements-card-title {
     }
     .activite {
         width: 100%;
+        max-width: 375px;
         height: 160vh;
         display: flex;
         flex-direction: column;
@@ -1008,6 +1008,21 @@ h3.hebergements-card-title {
     .hebergement_activite {
         flex-direction: column;
         display: flex;
+    }
+    .hebergement_activite {
+        width: 320px;
+    }
+    .activite-img-text {
+        width: 100%;
+        height: 380px;
+        border-radius: 20px;
+        margin-top: 15px;
+        box-shadow: 0px 3px 15px 0px #0000001A;
+    }
+    .activite-img-text img {
+        width: 320px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
     }
     .main-footer {
         background-color: var(--filter-bg-color);
