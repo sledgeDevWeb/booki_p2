@@ -926,7 +926,7 @@ text {
         border-bottom: 2px solid var(--main-color);
     }
     .myline {
-        width: 93%;
+        width: 100%;
         display: block;
         position: absolute;
         top: 106px;
