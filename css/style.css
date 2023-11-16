@@ -310,10 +310,6 @@
         padding: 25px;
         box-sizing: border-box;
     }
-    
-    #bgcolor {
-        background-color: var(--main-bg-color);
-    }
     /****** Hebergements ***********/
     
     .hebergements {
@@ -898,17 +894,23 @@
             gap: 4rem;
             align-items: center;
         }
-        nav a:focus {
-            color: var(--main-color);
+        .activeLine:hover {
+            display: block;
             border-top: none;
             border-bottom: 2px solid var(--main-color);
-            width: 50%;
+            width: 230px;
+        }
+        .activeLineTwo:hover {
+            display: block;
+            border-top: none;
+            border-bottom: 2px solid var(--main-color);
+            width: 170%;
         }
         .myline {
             width: 96%;
             display: block;
             position: absolute;
-            top: 101px;
+            top: 103px;
             left: 0;
             right: 0;
             border: 1px solid #F2F2F2;
@@ -1050,10 +1052,9 @@
     .populaires-cards a {
         width: 100%;
     }
-    
-    #bgcolor {
+    /* #bgcolor {
         background-color: #FFFFFF;
-    }
+    } */
     
     .section-title {
         width: 335px;
