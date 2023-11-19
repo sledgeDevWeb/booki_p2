@@ -679,7 +679,7 @@ text {
 
 @media (max-width:768px) {
     body {
-        border: 1px solid red
+        border: 1px solid red;
     }
     .main-container {
         width: 100%;
@@ -811,6 +811,14 @@ text {
         text-align: left;
     }
     /* form start */
+    form {
+        display: flex;
+        align-items: center;
+        margin-top: 2.25rem;
+        border: solid 1px var(--filter-bg-color);
+        border-radius: 15px;
+        width: 375px;
+    }
     .back_icone_loupe {
         left: 286px;
         padding: 15px, 16px, 15px, 16px;
@@ -1050,9 +1058,6 @@ text {
 }
 
 @media (max-width:480px) {
-    body {
-        border: 1px solid red
-    }
     .main-container {
         width: 100%;
         margin: 0;
@@ -1132,7 +1137,40 @@ text {
         line-height: 19px;
         letter-spacing: 0em;
     }
-    .myform input {
+    /* form start */
+    form {
+        display: flex;
+        align-items: center;
+        margin-top: 2.25rem;
+        border: solid 1px var(--filter-bg-color);
+        border-radius: 15px;
+        width: 342px;
+    }
+    .back_icone_loupe {
+        left: 286px;
+        padding: 15px, 16px, 15px, 16px;
+        border-radius: 15px;
+        border: 1px;
+        background-color: var(--main-color);
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    #icone_loupe {
+        display: block;
+        color: #FFFFFF;
+    }
+    .search {
+        display: none;
+        width: none;
+        height: none;
+    }
+    /* form end */
+    /* .myform input {
         width: 146px;
         height: 34px;
         padding: 15px;
@@ -1166,7 +1204,7 @@ text {
         border: 1px;
         background-color: #F2F2F2;
         color: black;
-    }
+    } */
     .iconsFiltres {
         display: flex;
         align-items: center;
