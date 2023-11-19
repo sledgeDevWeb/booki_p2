@@ -83,8 +83,7 @@ section {
     width: 100%;
 }
 
-.text_box p {
-    font-size: 22px;
+.text_box h1 {
     font-weight: 700;
     line-height: 26px;
     letter-spacing: 0em;
@@ -99,7 +98,69 @@ section {
     text-align: left;
 }
 
-.myform {
+
+/* form start*/
+
+form {
+    display: flex;
+    align-items: center;
+    margin-top: 2.25rem;
+    border: solid 1px var(--filter-bg-color);
+    border-radius: 15px;
+    width: 424px;
+}
+
+.search_icon {
+    background-color: var(--filter-bg-color);
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search_icon i {
+    color: #000000;
+}
+
+.town {
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.search {
+    background-color: var(--main-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    width: 8.25rem;
+    height: 3.12rem;
+    cursor: pointer;
+}
+
+
+/* .search:hover {
+    color: #000000;
+} */
+
+#icone_loupe {
+    display: none;
+}
+
+
+/* form end*/
+
+
+/* .myform {
     width: 100%;
     max-width: 375px;
     display: flex;
@@ -148,7 +209,7 @@ section {
 
 .myform #search_mobile {
     display: none;
-}
+} */
 
 .iconsFiltres {
     display: flex;
@@ -195,6 +256,9 @@ section {
     background-color: var(--filter-bg-color);
 }
 
+
+/* infobox start */
+
 .infobox {
     display: flex;
     align-items: center;
@@ -212,6 +276,9 @@ section {
     border-radius: 100%;
     font-size: 12px;
 }
+
+
+/* infobox start */
 
 
 /*SECTION BLOCK END */
@@ -609,11 +676,8 @@ text {
 @media (max-width:768px) {
     .main-container {
         width: 100%;
-        padding: 0% 2%;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-        padding: 0 auto;
-        margin: 0 auto;
+        margin: 0;
+        padding: 0;
     }
     /* Nav bar */
     .appBar {
@@ -627,6 +691,14 @@ text {
         align-items: center;
         align-content: center;
         justify-content: center;
+    }
+    .appBar a {
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
     }
     .logo {
         margin-bottom: 1rem;
@@ -715,6 +787,7 @@ text {
     /*SECTION BLOCK*/
     section {
         width: 100%;
+        padding-left: 5px;
     }
     .text_box p {
         font-size: 18px;
@@ -730,7 +803,32 @@ text {
         letter-spacing: 0em;
         text-align: left;
     }
-    .myform input {
+    /* form start */
+    .back_icone_loupe {
+        left: 286px;
+        padding: 15px, 16px, 15px, 16px;
+        border-radius: 15px;
+        border: 1px;
+        background-color: var(--main-color);
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    #icone_loupe {
+        display: block;
+        color: #FFFFFF;
+    }
+    .search {
+        display: none;
+        width: none;
+        height: none;
+    }
+    /* form end */
+    /* .myform input {
         width: 192px;
         height: 34px;
         padding: 15px;
@@ -770,7 +868,7 @@ text {
         border: 1px;
         background-color: #F2F2F2;
         color: black;
-    }
+    } */
     .iconsFiltres {
         display: flex;
         align-items: center;
@@ -957,6 +1055,14 @@ text {
         align-content: center;
         justify-content: center;
     }
+    .appBar a {
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
     .logo {
         margin-bottom: 1rem;
         width: 50%;
@@ -998,6 +1104,19 @@ text {
     section {
         width: 100%;
     }
+    .text_box h1 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .text_box span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+    }
     .myform input {
         width: 146px;
         height: 34px;
@@ -1037,7 +1156,7 @@ text {
         display: flex;
         align-items: center;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         margin-top: 30px;
     }
     .iconsText {
@@ -1147,7 +1266,8 @@ text {
     text-align: left;
 }
 
-height: 26px;
+
+/* height: 26px;
 font-family: Raleway;
 font-size: 18px;
 font-weight: 700;
@@ -1155,4 +1275,4 @@ line-height: 26px;
 letter-spacing: 0em;
 text-align: left;
 
-}
+} */

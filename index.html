@@ -35,12 +35,22 @@
                         centre-ville ou en pleine nature</span></h1>
             </div>
 
-            <div class="myform">
+            <!-- <div class="myform">
                 <i class="fa-solid fa-location-dot"></i>
                 <input type="text" placeholder="Marseille, France">
                 <a href="#" class="search_desktop"> Rechercher</a>
                 <a href="#" id="search_mobile"> <i class="fa-solid fa-magnifying-glass"></i></a>
-            </div>
+            </div> -->
+
+            <form>
+                <div class="search_icon">
+                    <i class="fa-solid fa-location-dot fa-lg"></i>
+                </div>
+                <label for="fName"></label>
+                <input class="town" type="text" name="nom" id="nom" tabindex="1" placeholder="Marseille, France">
+                <input class="search" type="submit" value="Rechercher">
+                <div class="back_icone_loupe"><i id="icone_loupe" class="fa-lg fa-solid fa-magnifying-glass"></i></div>
+            </form>
 
 
 
