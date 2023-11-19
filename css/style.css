@@ -152,6 +152,10 @@ form {
     color: #000000;
 } */
 
+.back-icone_loupe {
+    display: none;
+}
+
 #icone_loupe {
     display: none;
 }
