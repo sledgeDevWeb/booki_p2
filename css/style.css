@@ -678,6 +678,9 @@ text {
 }
 
 @media (max-width:768px) {
+    body {
+        border: 1px solid red
+    }
     .main-container {
         width: 100%;
         margin: 0;
@@ -1047,6 +1050,14 @@ text {
 }
 
 @media (max-width:480px) {
+    body {
+        border: 1px solid red
+    }
+    .main-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .appBar {
         display: flex;
         justify-content: space-between;
