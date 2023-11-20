@@ -426,7 +426,8 @@
         background-color: var(--filter-bg-color);
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
+        gap: 15rem;
     }
     
     .footer-links {
@@ -708,8 +709,6 @@
         }
         .search {
             display: none;
-            width: none;
-            height: none;
         }
         /* form end */
         .iconsFiltres {
@@ -733,7 +732,6 @@
             border: 2px solid #D9D9D9;
             width: 45%;
             height: 50px;
-            padding: 4px, 19px, 4px, 19px
         }
         .iconsText i {
             padding: 10px;
@@ -979,13 +977,12 @@
         }
         .back_icone_loupe {
             left: 286px;
-            padding: 15px, 16px 15px 16px;
+            padding: 15px 16px 15px 16px;
             border-radius: 15px;
             border: 1px;
             background-color: var(--main-color);
             width: 3.125rem;
             height: 3.125rem;
-            border-radius: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -997,8 +994,6 @@
         }
         .search {
             display: none;
-            width: none;
-            height: none;
         }
         .iconsFiltres {
             display: flex;
