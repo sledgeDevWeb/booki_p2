@@ -15,7 +15,8 @@
     }
     
     .main-container {
-        width: 90%;
+        width: 100%;
+        max-width: 1400px;
         padding: 0% 5%;
         overflow-x: hidden;
         scroll-behavior: smooth;
@@ -57,10 +58,11 @@
         color: var(--main-color);
         border-top: solid 2px var(--main-color);
         transition: color 0.2s ease-in-out;
+        padding-top: 16.5px;
     }
     
     .inactive {
-        padding-top: 0.85rem;
+        padding-top: 14px;
         margin-left: 4.38rem;
         color: #000000;
     }
@@ -69,6 +71,7 @@
         color: var(--main-color);
         border-top: solid 2px var(--main-color);
         transition: color 0.2s ease-in-out;
+        padding-top: 16.5px;
     }
     /*HEADER END*/
     /*SECTION BLOCK*/
@@ -150,56 +153,6 @@
         display: none;
     }
     /* form end*/
-    /* .myform {
-    width: 100%;
-    max-width: 375px;
-    display: flex;
-    align-items: center;
-}
-
-.myform i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 49px;
-    border-radius: 15px, 0px, 0px, 15px;
-    border: 1px;
-    background-color: #F2F2F2;
-    color: black;
-}
-
-.myform input {
-    width: 147px;
-    height: 17px;
-    padding: 15px;
-    border: 1px solid #F2F2F2;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: black;
-}
-
-.myform .search_desktop {
-    width: 92px;
-    height: 18px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding: 15px 16px 15px 16px;
-    border-radius: 0px 15px 15px 0px;
-    border: 1px;
-    color: #FFFFFF;
-    background-color: var(--main-color);
-}
-
-.myform #search_mobile {
-    display: none;
-} */
     
     .iconsFiltres {
         display: flex;
@@ -224,7 +177,7 @@
         border: 2px solid #D9D9D9;
         width: 170px;
         height: 50px;
-        padding: 4px, 19px, 4px, 19px
+        padding: 4px 19px 4px 19px;
     }
     
     .iconsText i {
@@ -425,7 +378,7 @@
     
     .activite {
         width: 100%;
-        height: 490px;
+        height: 540px;
     }
     
     .hebergement_activite {
@@ -446,7 +399,7 @@
     
     .activite-img-text {
         width: 100%;
-        height: 380px;
+        height: 439px;
         border-radius: 20px;
         margin-top: 15px;
         box-shadow: 0px 3px 15px 0px #0000001A;
@@ -454,7 +407,7 @@
     
     .activite-img-text img {
         width: 100%;
-        height: 300px;
+        height: 380px;
         border-radius: 20px 20px 0px 0px;
     }
     
@@ -537,7 +490,6 @@
             justify-content: flex-start;
             border-radius: 25px;
             border: 2px solid #D9D9D9;
-            padding: 4px, 19px, 4px, 19px
         }
         .iconsText i {
             padding: 10px;
@@ -643,7 +595,7 @@
     
     @media (max-width:768px) {
         body {
-            border: 1px solid red;
+            border: 1px solid blue;
         }
         .main-container {
             width: 100%;
@@ -707,53 +659,6 @@
             border-bottom: solid 2px var(--main-color);
             transition: color 0.2s ease-in-out;
         }
-        /* header {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-        }
-        .logo {
-            width: 121.09px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 79px;
-            padding: 20px;
-        }
-        .logo img {
-            width: 61.09px;
-            height: 19px;
-        }
-        .links li {
-            list-style-type: none;
-        }
-        nav {
-            width: 100%;
-        }
-        .links {
-            position: relative;
-            max-width: 680px;
-            display: flex;
-            justify-content: space-around;
-            gap: 4rem;
-            align-items: center;
-        }
-        nav a:hover {
-            color: var(--main-color);
-            border-top: none;
-            border-bottom: 2px solid var(--main-color);
-        }
-        .myline {
-            width: 98%;
-            display: block;
-            position: absolute;
-            top: 178px;
-            left: 0;
-            right: 0;
-            border: 1px solid #F2F2F2;
-        } */
         /*HEADER END*/
         /*SECTION BLOCK*/
         section {
@@ -785,7 +690,7 @@
         }
         .back_icone_loupe {
             left: 286px;
-            padding: 15px, 16px, 15px, 16px;
+            padding: 15px 16px 15px 16px;
             border-radius: 15px;
             border: 1px;
             background-color: var(--main-color);
@@ -807,47 +712,6 @@
             height: none;
         }
         /* form end */
-        /* .myform input {
-        width: 192px;
-        height: 34px;
-        padding: 15px;
-        border: 1px solid #F2F2F2;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: black;
-    }
-    .myform .search_desktop {
-        display: none;
-    }
-    .myform #search_mobile {
-        display: block;
-    }
-    #search_mobile i {
-        display: flex;
-        justify-content: center;
-        color: #FFFFFF;
-        background-color: var(--main-color);
-        width: 34px;
-        height: 34px;
-        padding: 15px, 16px, 15px, 16px;
-        border-radius: 15px;
-        border: 1px;
-        box-shadow: 0px 4px 4px 0px #00000040;
-    }
-    .myform i {
-        display: flex;
-        width: 36px;
-        height: 34px;
-        padding: 15px 15px;
-        text-align: center;
-        border-radius: 15px, 0px, 0px, 15px;
-        border: 1px;
-        background-color: #F2F2F2;
-        color: black;
-    } */
         .iconsFiltres {
             display: flex;
             align-items: center;
@@ -968,8 +832,8 @@
         .populaires-cards img {
             width: 100%;
             height: 146px;
-            border-radius: 20px, 0px, 0px, 20px;
-            border: 5px, 0px, 5px, 5px;
+            border-radius: 20px 0px 0px 20px;
+            border: 5px 0px 5px 5px;
         }
         .populaires-cards .card-content {
             width: 67%;
@@ -1115,7 +979,7 @@
         }
         .back_icone_loupe {
             left: 286px;
-            padding: 15px, 16px, 15px, 16px;
+            padding: 15px, 16px 15px 16px;
             border-radius: 15px;
             border: 1px;
             background-color: var(--main-color);
@@ -1136,42 +1000,6 @@
             width: none;
             height: none;
         }
-        /* form end */
-        /* .myform input {
-        width: 146px;
-        height: 34px;
-        padding: 15px;
-        border: 1px solid #F2F2F2;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: black;
-    }
-    #search_mobile i {
-        display: flex;
-        justify-content: center;
-        color: #FFFFFF;
-        background-color: var(--main-color);
-        width: 36px;
-        height: 34px;
-        padding: 15px, 16px, 15px, 16px;
-        border-radius: 15px;
-        border: 1px;
-        box-shadow: 0px 4px 4px 0px #00000040;
-    }
-    .myform i {
-        display: flex;
-        width: 38px;
-        height: 34px;
-        padding: 15px 15px;
-        text-align: center;
-        border-radius: 15px, 0px, 0px, 15px;
-        border: 1px;
-        background-color: #F2F2F2;
-        color: black;
-    } */
         .iconsFiltres {
             display: flex;
             align-items: center;
@@ -1193,7 +1021,6 @@
             border: 2px solid #D9D9D9;
             width: 127px;
             height: 50px;
-            padding: 4px, 19px, 4px, 19px
         }
         .iconsText i {
             padding: 10px;
@@ -1283,12 +1110,3 @@
         letter-spacing: 0em;
         text-align: left;
     }
-    /* height: 26px;
-font-family: Raleway;
-font-size: 18px;
-font-weight: 700;
-line-height: 26px;
-letter-spacing: 0em;
-text-align: left;
-
-} */
